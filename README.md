@@ -38,8 +38,6 @@ O Speech Studio é a porta de entrada da nossa análise. Sua função é transcr
 * **Configuração de Idioma e Localidade:** Especificar corretamente o idioma e a região (ex: `pt-BR` para Português do Brasil) melhora o reconhecimento de sotaques e expressões locais.
 * **Pontuação e Formatação:** O Speech Studio pode adicionar pontuação automaticamente, o que é vital para o Language Studio interpretar corretamente as pausas e a estrutura das frases, impactando a análise de sentimentos.
 
-*Exemplo de transcrição pode ser encontrado em: [`/artefatos/transcricoes/`](./artefatos/transcricoes/)*
-
 ### **2. Azure Language Studio: Decifrando a Intenção no Texto**
 
 Com o texto em mãos, o Language Studio entra em ação para extrair o significado e o sentimento por trás das palavras.
@@ -60,7 +58,6 @@ Com o texto em mãos, o Language Studio entra em ação para extrair o significa
 * **Contexto é Rei:** A análise é poderosa, mas não infalível. Uma frase como "Que atendimento rápido, inacreditável!" pode ser genuinamente positiva ou sarcástica. O modelo padrão captura o sentimento literal; a análise de sarcasmo ainda é um desafio complexo em IA.
 * **Granularidade da Análise:** Analisar o sentimento por sentença oferece uma visão muito mais detalhada do que analisar o sentimento do documento inteiro. Uma chamada de suporte pode começar negativa, se tornar neutra durante a resolução e terminar positiva.
 
-*Exemplo de resultado da análise pode ser encontrado em: [`/artefatos/resultados_analise/`](./artefatos/resultados_analise/)*
 
 ---
 
@@ -71,7 +68,5 @@ Com o texto em mãos, o Language Studio entra em ação para extrair o significa
 3.  **Entrada de Texto no Language Studio:** O texto transcrito é usado como entrada para o serviço de Análise de Sentimentos.
 4.  **Análise e Geração de Insights:** O Language Studio retorna uma estrutura de dados (geralmente JSON) com o sentimento geral, o sentimento por sentença e a mineração de opinião sobre aspectos específicos.
 5.  **Tomada de Decisão:** Os insights gerados podem ser usados para avaliar a satisfação do cliente, identificar pontos de melhoria em produtos/serviços e treinar equipes de atendimento.
-
-![Fluxo de Trabalho](docs/imagens/workflow_diagram.png) ## Conclusão
 
 Esta prática demonstrou como os serviços do Azure AI podem ser orquestrados para criar soluções sofisticadas de análise de linguagem. A documentação neste repositório reflete as etapas, os desafios e os aprendizados do processo, servindo como uma base sólida para futuras implementações e estudos na área de IA de Voz e Linguagem.
